@@ -88,14 +88,15 @@ void binarySearch()
 
             if (element[mid] == x)
             {
-                cout << "Elemen ditemukan pada index ke-" << mid << endl;
-                break;
+                cout << "\n[✔] Elemen " << x << " ditemukan pada indeks " << mid << "\n";
+                return;
             }
-            else if (x < element[mid])
+
+            if (x < element[mid])
             {
                 high = mid - 1;
             }
-            else
+            if (x > element[mid])
             {
                 low = mid + 1;
             }
@@ -104,10 +105,10 @@ void binarySearch()
 
         if (low > high)
         {
-            cout << "Elemen tidak ditemukan!" << endl;
+            cout << "\n[x] Elemen " << x <<  " tidak ditemukan dalam array.\n";
         }
 
-        cout << "Ulangi pencarian? (y/n): ";
+        cout << "\n Ingin mencari lagi? (y/n): ";
         cin >> ulang;
 
         } while (ulang == 'y' || ulang == 'Y');
