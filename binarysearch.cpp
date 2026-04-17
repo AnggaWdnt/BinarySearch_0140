@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int elemen[10];
+int element[10];
 int nPanjang;
 int x;
 
@@ -25,6 +25,11 @@ cout << "\n=======================================\n";
 cout << "    Masukkan Elemen Array             \n";
 cout << "=====================================\n";
 
+for (int i = 0; i < nPanjang; i++)
+{
+    cout << "Data ke-" << (i + 1) << " = ";
+    cin >> element[i];
+}
     }
 }
 
