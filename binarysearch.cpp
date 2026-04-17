@@ -20,5 +20,11 @@ else
 {
     cout << "\n[!] Jumlah elemen tidak boleh lebih dari 10. Silahkan coba lagi.\n";
 }
+
+cout << "\n=======================================\n";
+cout << "    Masukkan Elemen Array             \n";
+cout << "=====================================\n";
+
     }
 }
+
