@@ -33,3 +33,8 @@ for (int i = 0; i < nPanjang; i++)
     }
 }
 
+void bubbleSortArray()
+{
+    int pass = 1;
+    do
+    {
